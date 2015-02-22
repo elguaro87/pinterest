@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
-
+ruby '2.2.0'
 
 
 gem 'rails', '4.2.0'
@@ -19,8 +18,6 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'bootstrap-sass'
 
-gem 'sdoc', '~> 0.4.0', group: :doc
-
 group :development, :test do
 	gem 'sqlite3'
 end
@@ -28,6 +25,10 @@ end
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
+end
+
+group :doc do
+	gem 'sdoc', require: false
 end
 
 group :development, :test do
